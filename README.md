@@ -23,7 +23,7 @@ The app will be available on port 5000. You can make an HTTP POST request under 
 
 The dashboard with the records and status of the job queues is available in the same port under the [/queues](http://localhost:5000/queues) route.
 
-In addition to this, Prometheus will be available at post [9090](http://localhost:9090) and Grafana at port [3000](http://localhost:3000/).
+In addition to this, Prometheus will be available at port [9090](http://localhost:9090) and Grafana at port [3000](http://localhost:3000/).
 
 ## Built With
 
