@@ -1,0 +1,26 @@
+{
+  "name": "downloadfileserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^5.15.4",
+    "archiver": "^3.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "get-folder-size": "^2.0.1",
+    "html-pdf": "^2.2.0",
+    "kue": "^0.11.6",
+    "nodemailer": "^6.4.2",
+    "nodemailer-postmark-transport": "^2.2.0",
+    "prom-client": "^11.5.3",
+    "rimraf": "^3.0.2",
+    "website-scraper": "^4.2.0"
+  }
+}

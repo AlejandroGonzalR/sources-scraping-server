@@ -1,0 +1,23 @@
+groups:
+- name: alerts-group
+  rules:
+
+  # API High Median Response Time
+  - alert: APIHighMedianResponseTime
+    expr: histogram_quantile(0.5, sum(rate(http_request_duration_ms_bucket[1m])) by (le, service, route, method)) > 100
+    for: 60s
+    labels:
+      severity: page
+    annotations:
+      summary: "High median response time on {{ $labels.service }} and {{ $labels.method }} {{ $labels.route }}"
+      description: "{{ $labels.service }}, {{ $labels.method }} {{ $labels.route }} has a median response time above 100ms (current value: {{ $value }}ms)."
+
+  # API Instance Down - Unreachable for 5 minutes.
+  - alert: InstanceDown
+    expr: up == 0
+    for: 5m
+    labels:
+      severity: page
+    annotations:
+      summary: "Instance {{ $labels.instance }} down"
+      description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 5 minutes."
