@@ -1,13 +1,12 @@
 {
   "name": "downloadfileserver",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js application that scrapes resources from a given website link.",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "@sentry/node": "^5.15.4",
     "archiver": "^3.1.1",
@@ -22,5 +21,12 @@
     "prom-client": "^11.5.3",
     "rimraf": "^3.0.2",
     "website-scraper": "^4.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlejandroGonzalR/sources-scraping-server.git"
+  },
+  "keywords": [],
+  "author": "Alejandro González Rodríguez",
+  "license": "MIT"
 }
