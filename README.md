@@ -27,7 +27,7 @@ In addition to this, Prometheus will be available at port [9090](http://localhos
 
 ## Built With
 
-* [Node.js 12.16.1 LTS](https://maven.apache.org/) - Runtime environment
+* [Node.js 12.16.1 LTS](https://nodejs.org/en/) - Runtime environment
 * See also the used [packages](https://github.com/AlejandroGonzalR/berkeley-algorithm/blob/master/package.json)
 
 ## Authors
