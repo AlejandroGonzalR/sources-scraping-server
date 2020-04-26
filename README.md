@@ -1,6 +1,8 @@
 # Sources Scraping Server 
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/alejandrogonzalr/node-kubernetes)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/alejandrogonzalr/node-kubernetes)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/alejandrogonzalr/node-kubernetes)
 
 This project is based on a service that extracts the resources of the link of a web page, sending the result by email with a PDF report with the size and record of the resources obtained.
 
