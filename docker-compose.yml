@@ -19,14 +19,14 @@ services:
       - app-network
 
   redis:
-    image: redis
+    image: redis:6.0-rc4
     networks:
       - app-network
     restart: always
 
   prometheus:
     container_name: "prometheus"
-    image: prom/prometheus
+    image: prom/prometheus:v2.17.2
     ports:
       - "9090:9090"
     volumes:
@@ -42,7 +42,7 @@ services:
 
   grafana:
     container_name: "grafana"
-    image: grafana/grafana
+    image: grafana/grafana::6.7.3
     depends_on:
       - prometheus
     ports:
