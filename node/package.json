@@ -16,7 +16,7 @@
     "get-folder-size": "^2.0.1",
     "html-pdf": "^2.2.0",
     "kue": "^0.11.6",
-    "nodemailer": "^6.4.2",
+    "nodemailer": "^6.4.16",
     "nodemailer-postmark-transport": "^2.2.0",
     "prom-client": "^11.5.3",
     "rimraf": "^3.0.2",
